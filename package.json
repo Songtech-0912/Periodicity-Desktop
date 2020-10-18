@@ -1,8 +1,8 @@
 {
-  "name": "ptable",
+  "name": "periodicity-desktop",
   "version": "1.0.0",
   "description": "Vue.js Periodic Table",
-  "author": "Kadin Zhang",
+  "author": "Jacky Song, Kadin Zhang",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -16,12 +16,13 @@
     "express-force-https": "^1.0.0",
     "gsap": "^2.1.1",
     "material-design-icons-iconfont": "^3.0.3",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.14.1",
     "periodic-table": "0.0.8",
     "sass-loader": "^7.0.3",
     "vue": "^2.5.2",
     "vue-fraction-grid": "^1.1.0",
     "vue-router": "^3.0.1",
+    "vue-sidebar-menu": "^4.7.3",
     "vuetify": "^1.1.7"
   },
   "devDependencies": {
@@ -40,6 +41,7 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "gulp-sass": "^4.1.0",
     "html-webpack-plugin": "^2.30.1",
     "mini-css-extract-plugin": "^0.4.2",
     "node-notifier": "^5.1.2",
