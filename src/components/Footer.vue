@@ -9,7 +9,7 @@
             </v-card-text>
             <v-flex primary lighten-2 py-3 text-xs-center xs12 class="copy">
                 &copy;{{new Date().getFullYear()}} -
-                <span>Kadin Zhang</span>
+                <span>Jacky Song - based on work by Kadin Zhang</span>
             </v-flex>
         </v-layout>
     </v-footer>
