@@ -1,16 +1,59 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="resources/TweenMax.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="google" content="notranslate" />
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />
-    <title>Periodicity</title>
-  </head>
+<!DOCTYPE html><html><head><script src=resources/TweenMax.min.js></script><link rel=stylesheet href=resources/fonts.css><meta charset=UTF-8><meta name=google content=notranslate><meta http-equiv=Content-Language content=en><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=static/favicon.ico type=image/x-icon><title>Periodicity Desktop</title><style>body {
+      display: grid;
+      font-family: 'Open Sans';
+      font-style: normal;
+      grid-template-columns: 1fr 20fr;
+      padding: 0;
+      margin: 0;
+    }
 
-  <body>
-    <div id="app"></div>
-  </body>
-</html>
+    .sidebar {
+      height: auto;
+      background: #1f2738;
+      padding: 0.5rem;
+      font-size: auto;
+      text-align: center;
+      color: #ebe9ea;
+    }
+
+    .item {
+      padding: 0.5rem;
+      min-width: 2.5rem;
+      border-radius: 0.3rem;
+    }
+
+    .item1 {
+      margin-top: 5rem;
+    }
+
+    /* Fade */
+    .hvr-fade {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      overflow: hidden;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: color, background-color;
+      transition-property: color, background-color;
+    }
+
+    .hvr-fade:hover,
+    .hvr-fade:focus,
+    .hvr-fade:active {
+      background-color: #2b364d;
+      color: white;
+    }</style><link href=/style.css rel=stylesheet><link href=/static/css/app.28b0e4819a7187326d0d45e2e7fc46c7.css rel=stylesheet></head><body><div class=sidebar><div class="item item1 hvr-fade"><i data-feather=home></i><p>Home</p></div><div class="item item2 hvr-fade"><i data-feather=arrow-right-circle></i><p>Next</p></div><div class="item item3 hvr-fade"><i data-feather=arrow-left-circle></i><p>Back</p></div></div><div id=app></div><script src=resources/feather.min.js></script><script>feather.replace()
+    document.querySelector(".item1").onclick = function () {
+      window.location = '/';
+    };
+
+    document.querySelector(".item2").onclick = function () {
+      window.history.forward();
+    };
+
+    document.querySelector(".item3").onclick = function goBack() {
+      window.history.back();
+    };</script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.97a25c0f734829bf91ea.js></script><script type=text/javascript src=/static/js/app.0af2ac97b8b1e9ac1133.js></script></body></html>
