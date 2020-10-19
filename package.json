@@ -1,5 +1,5 @@
 {
-  "name": "Periodicity-Desktop",
+  "name": "periodicity-desktop",
   "productName": "Periodicity Desktop",
   "main": "index.js",
   "scripts": {
